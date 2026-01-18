@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Voget Meats - Premium Quality Meats and Butcher Services">
-    <title>Voget Meats | Premium Quality Meats</title>
+    <meta name="description" content="Contact Voget Meats - Visit our shop or send us a message">
+    <title>Contact Us | Voget Meats</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="images/Voget_Logo_Small.png" alt="Voget Meats Logo">
+                <a href="index.html"><img src="images/Voget_Logo_Small.png" alt="Voget Meats Logo"></a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="custom-cutting.html">Custom Cutting</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
             <div class="social-links">
                 <a href="https://www.facebook.com/VogetMeats1" target="_blank" rel="noopener" aria-label="Facebook">
@@ -32,58 +32,15 @@
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Voget Meats</h1>
-                <p>Quality meats from our family to yours since 1950</p>
-                <a href="#products" class="btn">View Our Products</a>
-            </div>
+        <section class="page-hero">
+            <h1>Contact Us</h1>
         </section>
 
-        <section id="about" class="about">
+        <section class="contact-page">
             <div class="container">
-                <h2>About Us</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>At Voget Meats, we take pride in providing the finest quality meats to our community. With decades of experience in the butcher trade, our family-owned business is dedicated to excellence in every cut.</p>
-                        <p>We source our meats from trusted local farms, ensuring freshness and quality that you can taste. Our skilled butchers bring expertise and passion to every order, whether you're preparing a family dinner or hosting a special event.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="images/claudio-schwarz-4qJlXK4mYzU-unsplash.jpg" alt="Quality Meats">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="products" class="products">
-            <div class="container">
-                <h2>Our Products</h2>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <img src="images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg" alt="Premium Beef">
-                        <h3>Premium Beef</h3>
-                        <p>Hand-selected cuts of the finest beef, aged to perfection.</p>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg" alt="Fresh Pork">
-                        <h3>Fresh Pork</h3>
-                        <p>Succulent pork cuts from locally raised hogs.</p>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/IMG_2100.PNG" alt="Specialty Items">
-                        <h3>Specialty Items</h3>
-                        <p>House-made sausages, bacon, and smoked meats.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3>Visit Our Shop</h3>
+                        <h2>Visit Our Shop</h2>
                         <p><strong>Address:</strong><br>123 Main Street<br>Your City, State 12345</p>
                         <p><strong>Phone:</strong><br>(555) 123-4567</p>
                         <p><strong>Hours:</strong><br>
@@ -91,12 +48,26 @@
                             Saturday: 8am - 4pm<br>
                             Sunday: Closed
                         </p>
+                        <div class="contact-social">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/VogetMeats1" target="_blank" rel="noopener" aria-label="Facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                    Facebook
+                                </a>
+                                <a href="https://www.instagram.com/vogetmeats/" target="_blank" rel="noopener" aria-label="Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                    Instagram
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="contact-form">
-                        <h3>Send Us a Message</h3>
+                        <h2>Send Us a Message</h2>
                         <form>
                             <input type="text" placeholder="Your Name" required>
                             <input type="email" placeholder="Your Email" required>
+                            <input type="tel" placeholder="Your Phone (optional)">
                             <textarea placeholder="Your Message" rows="5" required></textarea>
                             <button type="submit" class="btn">Send Message</button>
                         </form>

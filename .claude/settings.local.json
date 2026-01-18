@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd multi-page structure with social media links\n\n- Convert to multi-page site: Home, About, Products, Custom Cutting, Contact\n- Add Facebook and Instagram links to navbar and footer on all pages\n- Create custom-cutting.html with services grid\n- Add page hero styling for inner pages\n- Update CSS with social link styles and new page layouts\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }
