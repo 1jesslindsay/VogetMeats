@@ -1,0 +1,284 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Ribeye Steak",
+      "description": "Premium hand-cut ribeye steaks, perfectly marbled for exceptional flavor and tenderness. Aged to perfection.",
+      "price": "18.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Pork Chops",
+      "description": "Thick-cut bone-in pork chops from locally raised hogs. Juicy and flavorful.",
+      "price": "8.99/lb",
+      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+    },
+    {
+      "id": 3,
+      "name": "House-Made Sausages",
+      "description": "Our signature sausages made with our family recipe. Available in mild, hot, and Italian varieties.",
+      "price": "7.99/lb",
+      "image": "images/IMG_2100.PNG"
+    },
+    {
+      "id": 4,
+      "name": "Ground Beef",
+      "description": "Fresh ground beef, 80/20 lean-to-fat ratio. Perfect for burgers, meatloaf, and more.",
+      "price": "6.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Smoked Bacon",
+      "description": "Hickory-smoked bacon made in-house. Thick-sliced for the perfect crispy texture.",
+      "price": "9.99/lb",
+      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+    },
+    {
+      "id": 6,
+      "name": "New York Strip",
+      "description": "Classic New York strip steaks with excellent marbling. A steakhouse favorite.",
+      "price": "16.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Filet Mignon",
+      "description": "The most tender cut of beef. Lean and elegant for special occasions.",
+      "price": "24.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Baby Back Ribs",
+      "description": "Tender pork baby back ribs, perfect for smoking or grilling.",
+      "price": "7.49/lb",
+      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Beef Brisket",
+      "description": "Whole beef brisket, ideal for smoking or slow cooking. Rich, beefy flavor.",
+      "price": "8.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Pork Tenderloin",
+      "description": "Lean and tender pork tenderloin. Versatile cut great for roasting.",
+      "price": "6.99/lb",
+      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+    },
+    {
+      "id": 11,
+      "name": "T-Bone Steak",
+      "description": "Two steaks in one - strip and tenderloin separated by the bone.",
+      "price": "17.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Breakfast Sausage Links",
+      "description": "Traditional breakfast sausage links with sage and black pepper.",
+      "price": "6.49/lb",
+      "image": "images/IMG_2100.PNG"
+    },
+    {
+      "id": 13,
+      "name": "Chuck Roast",
+      "description": "Perfect for pot roast or slow cooker meals. Full of flavor.",
+      "price": "7.49/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Pork Shoulder",
+      "description": "Bone-in pork shoulder for pulled pork or carnitas. Great marbling.",
+      "price": "4.99/lb",
+      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Beef Short Ribs",
+      "description": "Meaty short ribs perfect for braising. Rich and succulent.",
+      "price": "9.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Italian Sausage",
+      "description": "Sweet or hot Italian sausage with fennel and herbs.",
+      "price": "7.49/lb",
+      "image": "images/IMG_2100.PNG"
+    },
+    {
+      "id": 17,
+      "name": "Sirloin Steak",
+      "description": "Lean and flavorful sirloin steaks. Great value for everyday grilling.",
+      "price": "11.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Ham Steaks",
+      "description": "Bone-in ham steaks, ready to pan-fry or grill.",
+      "price": "5.99/lb",
+      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Beef Stew Meat",
+      "description": "Pre-cut beef chunks perfect for stews and soups.",
+      "price": "8.49/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Pork Belly",
+      "description": "Fresh pork belly for homemade bacon or Asian dishes.",
+      "price": "6.99/lb",
+      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Porterhouse Steak",
+      "description": "The king of steaks - larger T-bone with more tenderloin.",
+      "price": "19.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Bratwurst",
+      "description": "German-style bratwurst sausages, perfect for grilling.",
+      "price": "7.99/lb",
+      "image": "images/IMG_2100.PNG"
+    },
+    {
+      "id": 23,
+      "name": "Flank Steak",
+      "description": "Lean, flavorful cut ideal for fajitas or London broil.",
+      "price": "12.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Pork Spare Ribs",
+      "description": "St. Louis style spare ribs, meaty and perfect for BBQ.",
+      "price": "5.99/lb",
+      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Tri-Tip Roast",
+      "description": "California-style tri-tip, great for grilling or roasting.",
+      "price": "10.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Kielbasa",
+      "description": "Polish-style smoked sausage with garlic and spices.",
+      "price": "7.49/lb",
+      "image": "images/IMG_2100.PNG"
+    },
+    {
+      "id": 27,
+      "name": "Skirt Steak",
+      "description": "Thin, flavorful cut perfect for carne asada and stir-fry.",
+      "price": "13.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Bone-In Pork Loin",
+      "description": "Center-cut pork loin roast, ideal for Sunday dinner.",
+      "price": "5.49/lb",
+      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Prime Rib Roast",
+      "description": "Standing rib roast for holiday celebrations and special events.",
+      "price": "15.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Andouille Sausage",
+      "description": "Cajun-style smoked sausage for gumbo and jambalaya.",
+      "price": "8.49/lb",
+      "image": "images/IMG_2100.PNG"
+    },
+    {
+      "id": 31,
+      "name": "Beef Tenderloin",
+      "description": "Whole beef tenderloin for roasting or cutting into filets.",
+      "price": "22.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Country Ham",
+      "description": "Dry-cured country ham with rich, savory flavor.",
+      "price": "8.99/lb",
+      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+    },
+    {
+      "id": 33,
+      "name": "Flat Iron Steak",
+      "description": "Second most tender cut of beef with great marbling.",
+      "price": "12.49/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Chorizo",
+      "description": "Mexican-style fresh chorizo with chilies and spices.",
+      "price": "6.99/lb",
+      "image": "images/IMG_2100.PNG"
+    },
+    {
+      "id": 35,
+      "name": "Eye of Round Roast",
+      "description": "Lean roast perfect for deli-style roast beef.",
+      "price": "7.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 36,
+      "name": "Pork Sausage Patties",
+      "description": "Fresh breakfast sausage patties, seasoned to perfection.",
+      "price": "5.99/lb",
+      "image": "images/IMG_2100.PNG"
+    },
+    {
+      "id": 37,
+      "name": "Beef Kabob Meat",
+      "description": "Pre-cut sirloin cubes ready for skewering and grilling.",
+      "price": "11.49/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 38,
+      "name": "Smoked Ham",
+      "description": "Spiral-cut smoked ham, ready for holiday gatherings.",
+      "price": "6.49/lb",
+      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+    },
+    {
+      "id": 39,
+      "name": "Beef Liver",
+      "description": "Fresh beef liver, nutrient-rich and flavorful.",
+      "price": "4.99/lb",
+      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+    },
+    {
+      "id": 40,
+      "name": "Hot Dogs",
+      "description": "All-beef hot dogs made with our signature blend.",
+      "price": "6.99/lb",
+      "image": "images/IMG_2100.PNG"
+    }
+  ]
+}
