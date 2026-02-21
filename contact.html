@@ -88,11 +88,11 @@
                     </div>
                     <div class="contact-form">
                         <h2>Send Us a Message</h2>
-                        <form>
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
-                            <input type="tel" placeholder="Your Phone (optional)">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <form action="https://formspree.io/f/xojnngqz" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="tel" name="phone" placeholder="Your Phone (optional)">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                             <button type="submit" class="btn">Send Message</button>
                         </form>
                     </div>
