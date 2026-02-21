@@ -1137,6 +1137,8 @@ footer p {
 .under-construction {
     padding: 80px 20px;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .under-construction-inner {
