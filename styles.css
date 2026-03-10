@@ -143,7 +143,6 @@ h1, h2, h3, h4, h5, h6 {
                 url('images/claudio-schwarz-4qJlXK4mYzU-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -409,7 +408,6 @@ h1, h2, h3, h4, h5, h6 {
                 url('images/Contact_us_Background.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     color: #faf8f5;
     position: relative;
 }
@@ -590,8 +588,13 @@ h1, h2, h3, h4, h5, h6 {
 .social-links a {
     color: #faf8f5;
     transition: all 0.3s ease;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid transparent;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-links a:hover {
@@ -863,6 +866,8 @@ h1, h2, h3, h4, h5, h6 {
 .map-embed {
     border: 0;
     display: block;
+    width: 100%;
+    height: 280px;
 }
 
 .contact-social {
@@ -982,7 +987,6 @@ footer p {
                 url('images/claudio-schwarz-4qJlXK4mYzU-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 [data-theme="dark"] .hero::before {
@@ -1003,7 +1007,6 @@ footer p {
                 url('images/Contact_us_Background.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 [data-theme="dark"] .contact::before {
@@ -1212,6 +1215,12 @@ footer p {
 
     .nav-links.open {
         display: flex;
+        animation: navSlideDown 0.25s ease forwards;
+    }
+
+    @keyframes navSlideDown {
+        from { opacity: 0; transform: translateY(-8px); }
+        to   { opacity: 1; transform: translateY(0); }
     }
 
     .nav-links li {

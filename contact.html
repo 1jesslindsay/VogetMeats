@@ -7,10 +7,11 @@
     <title>Contact Us | Voget Meats</title>
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Google Fonts - Bebas Neue for nav links -->
+    <!-- Google Fonts - Bebas Neue for nav links (non-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"></noscript>
 
     <!-- Favicon - Update the href path if you move the favicon file -->
     <link rel="icon" type="image/png" href="images/Favicon.png">
@@ -29,7 +30,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="images/Voget_Logo_Small.png" alt="Voget Meats Logo"></a>
+                <a href="index.html"><img src="images/Voget_Logo_Small.png" alt="Voget Meats Logo" width="111" height="70"></a>
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -79,8 +80,6 @@
                         <div class="contact-map">
                             <iframe
                                 src="https://maps.google.com/maps?q=2930+E+Street,+Hubbard,+Oregon+97032&output=embed"
-                                width="100%"
-                                height="220"
                                 class="map-embed"
                                 allowfullscreen=""
                                 loading="lazy"
@@ -163,7 +162,7 @@
         const backToTop = document.getElementById('back-to-top');
         window.addEventListener('scroll', () => {
             backToTop.classList.toggle('visible', window.scrollY > 400);
-        });
+        }, { passive: true });
         backToTop.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
