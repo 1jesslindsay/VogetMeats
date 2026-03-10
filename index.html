@@ -128,11 +128,40 @@
             <div class="container">
                 <h2>What Our Customers Say</h2>
                 <div class="section-divider"></div>
-                <div class="reviews-grid" id="reviews-grid">
-                    <p class="reviews-loading">Loading reviews...</p>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <strong class="reviewer-name">Long-time Customer</strong>
+                                <div class="review-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">Been a 'go to' for smoked and processed meats with our family for over 40 years. Favorites are their German smoked sausage, bacon, chipped beef and summer sausage!</p>
+                        <span class="review-time">Google Review</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <strong class="reviewer-name">Satisfied Customer</strong>
+                                <div class="review-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">I purchased half a hog and had it processed at Voget's. Without hesitation the absolute BEST bacon, sausage and ham I've ever gotten processed.</p>
+                        <span class="review-time">Google Review</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <strong class="reviewer-name">Happy Customer</strong>
+                                <div class="review-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">Great quality, fresh, and delicious — perfect for stocking up the freezer or just grabbing a quick snack. Staff is knowledgeable and very helpful.</p>
+                        <span class="review-time">Google Review</span>
+                    </div>
                 </div>
                 <div class="reviews-cta">
-                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJURbNyGJnlVQRDaT0lScF7gM" target="_blank" rel="noopener" class="btn" id="reviews-link">See All Reviews on Google</a>
+                    <a href="https://www.google.com/maps/place/?q=place_id:ChIJURbNyGJnlVQRDaT0lScF7gM" target="_blank" rel="noopener" class="btn">See All Reviews on Google</a>
                 </div>
             </div>
         </section>
@@ -252,76 +281,6 @@
             });
         });
 
-        // Google Reviews - cached for 24 hours
-        const REVIEWS_CACHE_KEY = 'voget_reviews_v1';
-        const REVIEWS_CACHE_TTL = 24 * 60 * 60 * 1000;
-
-        function escapeHtml(str) {
-            return String(str)
-                .replace(/&/g, '&amp;')
-                .replace(/</g, '&lt;')
-                .replace(/>/g, '&gt;')
-                .replace(/"/g, '&quot;');
-        }
-
-        function renderReviews(reviews) {
-            const grid = document.getElementById('reviews-grid');
-            if (!grid) return;
-            grid.innerHTML = reviews.map(r => `
-                <div class="review-card">
-                    <div class="review-header">
-                        <img class="reviewer-photo" src="${escapeHtml(r.profile_photo_url || '')}" alt="${escapeHtml(r.author_name)}" onerror="this.style.display='none'">
-                        <div class="reviewer-info">
-                            <strong class="reviewer-name">${escapeHtml(r.author_name)}</strong>
-                            <div class="review-stars">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div>
-                        </div>
-                    </div>
-                    <p class="review-text">${escapeHtml(r.text)}</p>
-                    <span class="review-time">${escapeHtml(r.relative_time_description)}</span>
-                </div>
-            `).join('');
-        }
-
-        function initReviews() {
-            const cached = localStorage.getItem(REVIEWS_CACHE_KEY);
-            if (cached) {
-                try {
-                    const { reviews, ts } = JSON.parse(cached);
-                    if (Date.now() - ts < REVIEWS_CACHE_TTL) {
-                        renderReviews(reviews);
-                        return;
-                    }
-                } catch(e) {}
-            }
-            const dummy = document.createElement('div');
-            const service = new google.maps.places.PlacesService(dummy);
-            service.getDetails({
-                placeId: 'ChIJURbNyGJnlVQRDaT0lScF7gM',
-                fields: ['reviews', 'url']
-            }, (place, status) => {
-                if (status === google.maps.places.PlacesServiceStatus.OK && place.reviews && place.reviews.length) {
-                    const reviews = place.reviews.slice(0, 5).map(r => ({
-                        author_name: r.author_name,
-                        rating: r.rating,
-                        text: r.text,
-                        relative_time_description: r.relative_time_description,
-                        profile_photo_url: r.profile_photo_url || ''
-                    }));
-                    try {
-                        localStorage.setItem(REVIEWS_CACHE_KEY, JSON.stringify({ reviews, ts: Date.now() }));
-                    } catch(e) {}
-                    if (place.url) {
-                        const link = document.getElementById('reviews-link');
-                        if (link) link.href = place.url;
-                    }
-                    renderReviews(reviews);
-                } else {
-                    const grid = document.getElementById('reviews-grid');
-                    if (grid) grid.innerHTML = '<p class="reviews-loading">Reviews temporarily unavailable. <a href="https://www.google.com/maps/place/?q=place_id:ChIJURbNyGJnlVQRDaT0lScF7gM" target="_blank" rel="noopener">View on Google Maps</a></p>';
-                }
-            });
-        }
-
         // Dark mode toggle
         const themeToggle = document.getElementById('theme-toggle');
         const html = document.documentElement;
@@ -340,6 +299,5 @@
             localStorage.setItem('theme', newTheme);
         });
     </script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2BcJM5wFr2B-CGjNYlWLiFAsZP2xpvXA&libraries=places&callback=initReviews"></script>
 </body>
 </html>
