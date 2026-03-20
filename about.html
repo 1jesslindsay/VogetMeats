@@ -16,6 +16,9 @@
     <!-- Favicon - Update the href path if you move the favicon file -->
     <link rel="icon" type="image/png" href="images/Favicon.png">
 
+    <!-- Prevent dark mode flash -->
+    <script>if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');}</script>
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://vogetmeats.com/about.html">
 
@@ -75,8 +78,8 @@
                         <p>Since that time, Voget Meats has undergone several expansions, including the building of the modern retail store in 1971. Today, Voget Meats remains locally owned and operated, and proudly celebrates Garfield's legacy with quality old-fashioned smoked meats, including award winning hams, bacon, sausage, and much more. We additionally specialize in retail fresh meats, custom wild-game processing, and are renowned for our holiday hams and smoked turkeys.</p>
                     </div>
                     <div class="about-image">
-                        <img src="images/G Voget_1.jpg" alt="Garfield Voget, Founder of Voget Meats" loading="lazy" width="786" height="901">
-                        <img src="images/G Voget_2.jpg" alt="Garfield Voget" loading="lazy" width="985" height="941">
+                        <img src="images/G Voget_1.webp" alt="Garfield Voget, Founder of Voget Meats" loading="lazy" width="786" height="901">
+                        <img src="images/G Voget_2.webp" alt="Garfield Voget" loading="lazy" width="985" height="941">
                     </div>
                 </div>
             </div>
@@ -116,49 +119,6 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
     </button>
 
-    <script>
-        // Back to top
-        const backToTop = document.getElementById('back-to-top');
-        window.addEventListener('scroll', () => {
-            backToTop.classList.toggle('visible', window.scrollY > 400);
-        }, { passive: true });
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // Mobile nav toggle
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-        hamburger.addEventListener('click', () => {
-            const isOpen = navLinks.classList.toggle('open');
-            hamburger.setAttribute('aria-expanded', isOpen);
-            hamburger.classList.toggle('open', isOpen);
-        });
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('open');
-                hamburger.setAttribute('aria-expanded', false);
-                hamburger.classList.remove('open');
-            });
-        });
-
-        // Dark mode toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        const html = document.documentElement;
-
-        // Check for saved theme preference or default to light
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        if (savedTheme === 'dark') {
-            html.setAttribute('data-theme', 'dark');
-        }
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>

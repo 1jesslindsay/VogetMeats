@@ -16,6 +16,12 @@
     <!-- Favicon - Update the href path if you move the favicon file -->
     <link rel="icon" type="image/png" href="images/Favicon.png">
 
+    <!-- Prevent dark mode flash -->
+    <script>if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');}</script>
+
+    <!-- Preload hero background image for faster LCP -->
+    <link rel="preload" as="image" href="images/claudio-schwarz-4qJlXK4mYzU-unsplash.webp">
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://vogetmeats.com/">
 
@@ -118,7 +124,7 @@
                         <p>We source our meat from trusted distributors, ensuring freshness and quality that you can taste. Our skilled butchers and sausage makers bring expertise and passion to every order, whether you're preparing a family dinner or hosting a special event.</p>
                     </div>
                     <div class="about-image">
-                        <img src="images/claudio-schwarz-4qJlXK4mYzU-unsplash.jpg" alt="Quality Meats" loading="lazy" width="5168" height="3448">
+                        <img src="images/claudio-schwarz-4qJlXK4mYzU-unsplash.webp" alt="Quality Meats" loading="lazy" width="5168" height="3448">
                     </div>
                 </div>
             </div>
@@ -172,17 +178,17 @@
                 <div class="section-divider"></div>
                 <div class="product-grid">
                     <div class="product-card">
-                        <img src="images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg" alt="Premium Beef" loading="lazy" width="4496" height="3000">
+                        <img src="images/cindie-hansen-8IQlsHB2OS8-unsplash.webp" alt="Premium Beef" loading="lazy" width="4496" height="3000">
                         <h3>Premium Beef</h3>
                         <p>Hand-selected cuts of the finest beef, aged to perfection.</p>
                     </div>
                     <div class="product-card">
-                        <img src="images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg" alt="Fresh Pork" loading="lazy" width="5687" height="3791">
+                        <img src="images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.webp" alt="Fresh Pork" loading="lazy" width="5687" height="3791">
                         <h3>Fresh Pork</h3>
                         <p>Succulent pork cuts from locally raised hogs.</p>
                     </div>
                     <div class="product-card">
-                        <img src="images/IMG_2100.PNG" alt="Specialty Items" loading="lazy" width="645" height="696">
+                        <img src="images/IMG_2100.webp" alt="Specialty Items" loading="lazy" width="645" height="696">
                         <h3>Specialty Items</h3>
                         <p>House-made sausages, bacon, and smoked meats.</p>
                     </div>
@@ -255,49 +261,6 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
     </button>
 
-    <script>
-        // Back to top
-        const backToTop = document.getElementById('back-to-top');
-        window.addEventListener('scroll', () => {
-            backToTop.classList.toggle('visible', window.scrollY > 400);
-        }, { passive: true });
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // Mobile nav toggle
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-        hamburger.addEventListener('click', () => {
-            const isOpen = navLinks.classList.toggle('open');
-            hamburger.setAttribute('aria-expanded', isOpen);
-            hamburger.classList.toggle('open', isOpen);
-        });
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('open');
-                hamburger.setAttribute('aria-expanded', false);
-                hamburger.classList.remove('open');
-            });
-        });
-
-        // Dark mode toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        const html = document.documentElement;
-
-        // Check for saved theme preference or default to light
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        if (savedTheme === 'dark') {
-            html.setAttribute('data-theme', 'dark');
-        }
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
