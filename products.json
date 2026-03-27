@@ -2,283 +2,360 @@
   "products": [
     {
       "id": 1,
-      "name": "Ribeye Steak",
-      "description": "Premium hand-cut ribeye steaks, perfectly marbled for exceptional flavor and tenderness. Aged to perfection.",
-      "price": "18.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Old-Fashioned Smoked German",
+      "price": "7.10/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Old-Fashioned-Smoked-German.webp"
     },
     {
       "id": 2,
-      "name": "Pork Chops",
-      "description": "Thick-cut bone-in pork chops from locally raised hogs. Juicy and flavorful.",
-      "price": "8.99/lb",
-      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+      "name": "Beef Summer Sausage, Slice to Order",
+      "price": "7.10/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Beef Summer Sausage, Slice to Order.webp"
     },
     {
       "id": 3,
-      "name": "House-Made Sausages",
-      "description": "Our signature sausages made with our family recipe. Available in mild, hot, and Italian varieties.",
-      "price": "7.99/lb",
-      "image": "images/IMG_2100.PNG"
+      "name": "Jalapeño and Cheese Summer Sausage",
+      "price": "8.10/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 4,
-      "name": "Ground Beef",
-      "description": "Fresh ground beef, 80/20 lean-to-fat ratio. Perfect for burgers, meatloaf, and more.",
-      "price": "6.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Voget's Hot Dogs",
+      "price": "6.75/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 5,
-      "name": "Smoked Bacon",
-      "description": "Hickory-smoked bacon made in-house. Thick-sliced for the perfect crispy texture.",
-      "price": "9.99/lb",
-      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+      "name": "Smoked Baby Back Ribs",
+      "price": "6.95/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 6,
-      "name": "New York Strip",
-      "description": "Classic New York strip steaks with excellent marbling. A steakhouse favorite.",
-      "price": "16.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Bacon",
+      "price": "8.95/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 7,
-      "name": "Filet Mignon",
-      "description": "The most tender cut of beef. Lean and elegant for special occasions.",
-      "price": "24.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Pepper Bacon",
+      "price": "9.95/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 8,
-      "name": "Baby Back Ribs",
-      "description": "Tender pork baby back ribs, perfect for smoking or grilling.",
-      "price": "7.49/lb",
-      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+      "name": "Voget's Whole and Half Hams",
+      "price": "5.15–5.25/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 9,
-      "name": "Beef Brisket",
-      "description": "Whole beef brisket, ideal for smoking or slow cooking. Rich, beefy flavor.",
-      "price": "8.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Sliced Beef Bacon",
+      "price": "8.50/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 10,
-      "name": "Pork Tenderloin",
-      "description": "Lean and tender pork tenderloin. Versatile cut great for roasting.",
-      "price": "6.99/lb",
-      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+      "name": "Oktoberfest Smoke Sausage Links",
+      "price": "7.25/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 11,
-      "name": "T-Bone Steak",
-      "description": "Two steaks in one - strip and tenderloin separated by the bone.",
-      "price": "17.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Little Smokies",
+      "price": "9.45/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Little Smokies.webp"
     },
     {
       "id": 12,
-      "name": "Breakfast Sausage Links",
-      "description": "Traditional breakfast sausage links with sage and black pepper.",
-      "price": "6.49/lb",
-      "image": "images/IMG_2100.PNG"
+      "name": "Ham Steaks",
+      "price": "6.25/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 13,
-      "name": "Chuck Roast",
-      "description": "Perfect for pot roast or slow cooker meals. Full of flavor.",
-      "price": "7.49/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Traditional Smoked Linguisa",
+      "price": "7.60/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 14,
-      "name": "Pork Shoulder",
-      "description": "Bone-in pork shoulder for pulled pork or carnitas. Great marbling.",
-      "price": "4.99/lb",
-      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+      "name": "Original, Teriyaki, and Jalapeño Pepperoni Sticks",
+      "price": "18.95 EA",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 15,
-      "name": "Beef Short Ribs",
-      "description": "Meaty short ribs perfect for braising. Rich and succulent.",
-      "price": "9.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Turkey Teriyaki Pepperoni Sticks",
+      "price": "18.95 EA",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 16,
-      "name": "Italian Sausage",
-      "description": "Sweet or hot Italian sausage with fennel and herbs.",
-      "price": "7.49/lb",
-      "image": "images/IMG_2100.PNG"
+      "name": "Spicy Red Hots",
+      "price": "7.25/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Spicey Red Hots.webp"
     },
     {
       "id": 17,
-      "name": "Sirloin Steak",
-      "description": "Lean and flavorful sirloin steaks. Great value for everyday grilling.",
-      "price": "11.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Old-Fashioned Dinner Franks",
+      "price": "7.25/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Old-Fashioned Dinner Franks.webp"
     },
     {
       "id": 18,
-      "name": "Ham Steaks",
-      "description": "Bone-in ham steaks, ready to pan-fry or grill.",
-      "price": "5.99/lb",
-      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+      "name": "Assorted Smoked Pork Chops",
+      "price": "5.25 (End Cut) – 6.25/lb (Center Cut)",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 19,
-      "name": "Beef Stew Meat",
-      "description": "Pre-cut beef chunks perfect for stews and soups.",
-      "price": "8.49/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Sage Sausage Patties",
+      "price": "6.95/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 20,
-      "name": "Pork Belly",
-      "description": "Fresh pork belly for homemade bacon or Asian dishes.",
-      "price": "6.99/lb",
-      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+      "name": "Bacon Ends and Pieces",
+      "price": "7.95/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Bacon Ends and Pieces.webp"
     },
     {
       "id": 21,
-      "name": "Porterhouse Steak",
-      "description": "The king of steaks - larger T-bone with more tenderloin.",
-      "price": "19.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Fresh Italian Links",
+      "price": "7.10/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 22,
-      "name": "Bratwurst",
-      "description": "German-style bratwurst sausages, perfect for grilling.",
-      "price": "7.99/lb",
-      "image": "images/IMG_2100.PNG"
+      "name": "Back Bacon",
+      "price": "8.95/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Back Bacon.webp"
     },
     {
       "id": 23,
-      "name": "Flank Steak",
-      "description": "Lean, flavorful cut ideal for fajitas or London broil.",
-      "price": "12.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Chipped Beef",
+      "price": "15.00/1lb · 16.00/½lb · 18.00/¼lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Chipped Beef.webp"
     },
     {
       "id": 24,
-      "name": "Pork Spare Ribs",
-      "description": "St. Louis style spare ribs, meaty and perfect for BBQ.",
-      "price": "5.99/lb",
-      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+      "name": "Tiny Links",
+      "price": "7.40/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Tiny Links.webp"
     },
     {
       "id": 25,
-      "name": "Tri-Tip Roast",
-      "description": "California-style tri-tip, great for grilling or roasting.",
-      "price": "10.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Whole Smoked Chickens",
+      "price": "4.50/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Whole Smoked Chickens.webp"
     },
     {
       "id": 26,
-      "name": "Kielbasa",
-      "description": "Polish-style smoked sausage with garlic and spices.",
-      "price": "7.49/lb",
-      "image": "images/IMG_2100.PNG"
+      "name": "Smoked Pork Butt (Pork Shoulder)",
+      "price": "Call for pricing",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 27,
-      "name": "Skirt Steak",
-      "description": "Thin, flavorful cut perfect for carne asada and stir-fry.",
-      "price": "13.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Smoked Shanks and Hocks",
+      "price": "Hocks 2.95/lb · Shanks 4.50/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 28,
-      "name": "Bone-In Pork Loin",
-      "description": "Center-cut pork loin roast, ideal for Sunday dinner.",
-      "price": "5.49/lb",
-      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+      "name": "Seasoned Breakfast Sausage",
+      "price": "5.50/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 29,
-      "name": "Prime Rib Roast",
-      "description": "Standing rib roast for holiday celebrations and special events.",
-      "price": "15.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Italian Breakfast Sausage",
+      "price": "6.50/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 30,
-      "name": "Andouille Sausage",
-      "description": "Cajun-style smoked sausage for gumbo and jambalaya.",
-      "price": "8.49/lb",
-      "image": "images/IMG_2100.PNG"
+      "name": "Sage Breakfast Sausage",
+      "price": "5.50/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 31,
-      "name": "Beef Tenderloin",
-      "description": "Whole beef tenderloin for roasting or cutting into filets.",
-      "price": "22.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Voget's Fresh Chorizo",
+      "price": "6.75/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 32,
-      "name": "Country Ham",
-      "description": "Dry-cured country ham with rich, savory flavor.",
-      "price": "8.99/lb",
-      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+      "name": "Lean Ground Beef",
+      "price": "7.75/lb",
+      "category": "USDA Choice Beef Steaks and Roasts",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 33,
-      "name": "Flat Iron Steak",
-      "description": "Second most tender cut of beef with great marbling.",
-      "price": "12.49/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Meatloaf",
+      "price": "7.95/lb",
+      "category": "USDA Choice Beef Steaks and Roasts",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 34,
-      "name": "Chorizo",
-      "description": "Mexican-style fresh chorizo with chilies and spices.",
-      "price": "6.99/lb",
-      "image": "images/IMG_2100.PNG"
+      "name": "Chuck Roast",
+      "price": "8.95/lb",
+      "category": "USDA Choice Beef Steaks and Roasts",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 35,
-      "name": "Eye of Round Roast",
-      "description": "Lean roast perfect for deli-style roast beef.",
-      "price": "7.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Ribeye Steak",
+      "price": "21.95/lb",
+      "category": "USDA Choice Beef Steaks and Roasts",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 36,
-      "name": "Pork Sausage Patties",
-      "description": "Fresh breakfast sausage patties, seasoned to perfection.",
-      "price": "5.99/lb",
-      "image": "images/IMG_2100.PNG"
+      "name": "T-Bone Steak",
+      "price": "15.95/lb",
+      "category": "USDA Choice Beef Steaks and Roasts",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 37,
-      "name": "Beef Kabob Meat",
-      "description": "Pre-cut sirloin cubes ready for skewering and grilling.",
-      "price": "11.49/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Top Sirloin",
+      "price": "12.95/lb",
+      "category": "USDA Choice Beef Steaks and Roasts",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 38,
-      "name": "Smoked Ham",
-      "description": "Spiral-cut smoked ham, ready for holiday gatherings.",
-      "price": "6.49/lb",
-      "image": "images/gabriella-clare-marino-WgqZ1q_nkPE-unsplash.jpg"
+      "name": "Tri-Tip Roast",
+      "price": "12.50/lb",
+      "category": "USDA Choice Beef Steaks and Roasts",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 39,
-      "name": "Beef Liver",
-      "description": "Fresh beef liver, nutrient-rich and flavorful.",
-      "price": "4.99/lb",
-      "image": "images/cindie-hansen-8IQlsHB2OS8-unsplash.jpg"
+      "name": "Rump Roasts",
+      "price": "7.99/lb",
+      "category": "USDA Choice Beef Steaks and Roasts",
+      "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 40,
-      "name": "Hot Dogs",
-      "description": "All-beef hot dogs made with our signature blend.",
-      "price": "6.99/lb",
-      "image": "images/IMG_2100.PNG"
+      "name": "Cube Steak",
+      "price": "7.45/lb",
+      "category": "USDA Choice Beef Steaks and Roasts",
+      "image": "images/Photo Coming Soon.webp"
+    },
+    {
+      "id": 41,
+      "name": "Filet Mignon",
+      "price": "29.95/lb",
+      "category": "USDA Choice Beef Steaks and Roasts",
+      "image": "images/Photo Coming Soon.webp"
+    },
+    {
+      "id": 42,
+      "name": "Brisket",
+      "price": "6.95/lb",
+      "category": "USDA Choice Beef Steaks and Roasts",
+      "image": "images/Photo Coming Soon.webp"
+    },
+    {
+      "id": 43,
+      "name": "Pork Chops",
+      "price": "5.25/lb",
+      "category": "Pork Roasts, Steaks, and Chops",
+      "image": "images/Photo Coming Soon.webp"
+    },
+    {
+      "id": 44,
+      "name": "Side Pork",
+      "price": "7.25/lb",
+      "category": "Pork Roasts, Steaks, and Chops",
+      "image": "images/Photo Coming Soon.webp"
+    },
+    {
+      "id": 45,
+      "name": "Boneless Pork Loin Roast",
+      "price": "5.25/lb",
+      "category": "Pork Roasts, Steaks, and Chops",
+      "image": "images/Photo Coming Soon.webp"
+    },
+    {
+      "id": 46,
+      "name": "Pork Shoulder Roast",
+      "price": "5.25/lb",
+      "category": "Pork Roasts, Steaks, and Chops",
+      "image": "images/Photo Coming Soon.webp"
+    },
+    {
+      "id": 47,
+      "name": "Pork Shoulder Steak",
+      "price": "5.25/lb",
+      "category": "Pork Roasts, Steaks, and Chops",
+      "image": "images/Photo Coming Soon.webp"
+    },
+    {
+      "id": 48,
+      "name": "Baby Back Ribs",
+      "price": "5.95/lb",
+      "category": "Pork Roasts, Steaks, and Chops",
+      "image": "images/Photo Coming Soon.webp"
+    },
+    {
+      "id": 49,
+      "name": "Carlton Farms Whole or Half Hogs Cut To Order",
+      "price": "Call for pricing",
+      "category": "Pork Roasts, Steaks, and Chops",
+      "image": "images/Photo Coming Soon.webp"
+    },
+    {
+      "id": 50,
+      "name": "Original and Teriyaki Beef Jerky",
+      "price": "34.95/1lb · 18.95/½lb · 10.25/¼lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Original and Teriyaki Beef Jerky.webp"
+    },
+    {
+      "id": 51,
+      "name": "Turkey Jerky",
+      "price": "11.50/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Turkey Jerky.webp"
     }
   ]
 }
