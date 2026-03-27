@@ -10,7 +10,10 @@
       "Bash(git pull:*)",
       "Bash(git stash:*)",
       "Bash(git fetch origin)",
-      "Bash(git checkout -- contact.html index.html)"
+      "Bash(git checkout -- contact.html index.html)",
+      "WebSearch",
+      "WebFetch(domain:1jesslindsay.github.io)",
+      "WebFetch(domain:vogetmeats.com)"
     ]
   }
 }
