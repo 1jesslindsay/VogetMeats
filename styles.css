@@ -685,6 +685,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2rem;
     padding-bottom: 0.75rem;
     border-bottom: 3px solid var(--color-rust);
+    text-align: center;
 }
 
 .products-page-header {
@@ -693,7 +694,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .products-page-header .logo-display img {
-    max-width: 180px;
+    max-width: 120px;
 }
 
 
@@ -1289,6 +1290,14 @@ footer p {
     .product-card {
         flex: 0 0 calc((100% - 1.5rem) / 2);
         max-width: calc((100% - 1.5rem) / 2);
+    }
+}
+
+/* Pork section override: use 4 columns at tablet so 7 items show 4+3 (never 1 alone) */
+@media (max-width: 968px) and (min-width: 481px) {
+    .pork-section .product-card {
+        flex: 0 0 calc((100% - 4.5rem) / 4);
+        max-width: calc((100% - 4.5rem) / 4);
     }
 }
 

@@ -99,7 +99,7 @@
                     });
                     Object.entries(grouped).forEach(([cat, products]) => {
                         const section = document.createElement('div');
-                        section.className = 'product-category-section';
+                        section.className = 'product-category-section' + (cat === 'Pork Roasts, Steaks, and Chops' ? ' pork-section' : '');
                         section.innerHTML = `<h2 class="category-heading">${cat}</h2><div class="product-grid">${
                             products.map(p => `
                                 <div class="product-card">
