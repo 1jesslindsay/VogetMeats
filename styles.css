@@ -1050,7 +1050,8 @@ footer p {
     color: #faf8f5;
 }
 
-[data-theme="dark"] .logo img {
+[data-theme="dark"] .logo img,
+[data-theme="dark"] .logo-display img {
     filter: drop-shadow(0 0 8px rgba(212, 160, 23, 0.6)) drop-shadow(0 0 15px rgba(212, 160, 23, 0.3));
 }
 
