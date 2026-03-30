@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(44, 27, 18, 0.7), rgba(44, 27, 18, 0.8)),
-                url('images/claudio-schwarz-4qJlXK4mYzU-unsplash.webp');
+                url('images/webp/IMG_0037_edited.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -315,6 +315,12 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
+}
+
+.product-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .product-card {
@@ -612,6 +618,17 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
+.page-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(transparent, var(--color-cream));
+    pointer-events: none;
+}
+
 .page-hero::before {
     content: '';
     position: absolute;
@@ -638,6 +655,56 @@ h1, h2, h3, h4, h5, h6 {
     height: 3px;
     background: var(--color-gold);
     margin: 1.5rem auto 0;
+}
+
+/* About Hero */
+.about-hero {
+    height: 55vh;
+    background: linear-gradient(rgba(44, 27, 18, 0.45), rgba(44, 27, 18, 0.55)),
+                url('images/Voget_Bldg.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #faf8f5;
+    position: relative;
+}
+
+.about-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(transparent, var(--color-cream));
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.about-hero h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--color-gold);
+    margin: 0.75rem auto 0;
+}
+
+[data-theme="dark"] .about-hero {
+    background: linear-gradient(rgba(10, 8, 5, 0.6), rgba(10, 8, 5, 0.7)),
+                url('images/Voget_Bldg.webp') center/cover no-repeat;
+}
+
+[data-theme="dark"] .about-hero::after {
+    background: linear-gradient(transparent, var(--color-cream));
 }
 
 /* About Page */
@@ -992,7 +1059,7 @@ footer p {
 
 [data-theme="dark"] .hero {
     background: linear-gradient(rgba(10, 8, 5, 0.85), rgba(10, 8, 5, 0.9)),
-                url('images/claudio-schwarz-4qJlXK4mYzU-unsplash.webp');
+                url('images/webp/IMG_0037_edited.webp');
     background-size: cover;
     background-position: center;
 }
@@ -1030,6 +1097,10 @@ footer p {
 [data-theme="dark"] .page-hero::before {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="%23ffffff" stroke-width="0.5" opacity="0.03"/></svg>');
     background-size: 100px 100px;
+}
+
+[data-theme="dark"] .page-hero::after {
+    background: linear-gradient(transparent, var(--color-cream));
 }
 
 [data-theme="dark"] .products-cta {
@@ -1405,6 +1476,7 @@ footer p {
 .contact a[href^="tel"]:hover {
     opacity: 0.75;
 }
+
 
 /* FAQ Page */
 .faq-page {

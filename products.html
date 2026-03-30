@@ -100,6 +100,7 @@
                     });
                     Object.entries(grouped).forEach(([cat, products]) => {
                         const section = document.createElement('div');
+                        section.id = cat.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
                         section.className = 'product-category-section' + (cat === 'Pork Roasts, Steaks, and Chops' ? ' pork-section' : '');
                         section.innerHTML = `<h2 class="category-heading">${cat}</h2><div class="product-grid">${
                             products.map(p => `
@@ -113,6 +114,10 @@
                         }</div>`;
                         container.appendChild(section);
                     });
+                    if (window.location.hash) {
+                        const target = document.querySelector(window.location.hash);
+                        if (target) target.scrollIntoView({ behavior: 'smooth' });
+                    }
                 });
         </script>
     </main>
