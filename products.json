@@ -110,7 +110,7 @@
       "name": "Spicy Red Hots",
       "price": "7.25/lb",
       "category": "Smoked Meats and Fresh Sausage",
-      "image": "images/Spicey Red Hots.webp"
+      "image": "images/Spicy Red Hots.webp"
     },
     {
       "id": 17,
@@ -298,49 +298,49 @@
       "id": 43,
       "name": "Pork Chops",
       "price": "5.25/lb",
-      "category": "Pork Roasts, Steaks, and Chops",
+      "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 44,
       "name": "Side Pork",
       "price": "7.25/lb",
-      "category": "Pork Roasts, Steaks, and Chops",
+      "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 45,
       "name": "Boneless Pork Loin Roast",
       "price": "5.25/lb",
-      "category": "Pork Roasts, Steaks, and Chops",
+      "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 46,
       "name": "Pork Shoulder Roast",
       "price": "5.25/lb",
-      "category": "Pork Roasts, Steaks, and Chops",
+      "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 47,
       "name": "Pork Shoulder Steak",
       "price": "5.25/lb",
-      "category": "Pork Roasts, Steaks, and Chops",
+      "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 48,
       "name": "Baby Back Ribs",
       "price": "5.95/lb",
-      "category": "Pork Roasts, Steaks, and Chops",
+      "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 49,
       "name": "Carlton Farms Whole or Half Hogs Cut To Order",
       "price": "Call for pricing",
-      "category": "Pork Roasts, Steaks, and Chops",
+      "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
@@ -356,6 +356,20 @@
       "price": "11.50/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Turkey Jerky.webp"
+    },
+    {
+      "id": 52,
+      "name": "Whole Ham",
+      "price": "5.15/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
+    },
+    {
+      "id": 53,
+      "name": "Half Ham",
+      "price": "5.25/lb",
+      "category": "Smoked Meats and Fresh Sausage",
+      "image": "images/Photo Coming Soon.webp"
     }
   ]
 }
