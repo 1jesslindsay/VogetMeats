@@ -101,7 +101,8 @@
     {
       "id": 15,
       "name": "Turkey Teriyaki Pepperoni Sticks",
-      "price": "18.95 EA",
+      "price": "Sold Out",
+      "available": false,
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
@@ -157,7 +158,7 @@
     {
       "id": 23,
       "name": "Chipped Beef",
-      "price": "15.00/1lb · 16.00/½lb · 18.00/¼lb",
+      "price": "15.00/lb · 16.00/½lb · 18.00/¼lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Chipped Beef.webp"
     },
@@ -356,20 +357,6 @@
       "price": "11.50/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Turkey Jerky.webp"
-    },
-    {
-      "id": 52,
-      "name": "Whole Ham",
-      "price": "5.15/lb",
-      "category": "Smoked Meats and Fresh Sausage",
-      "image": "images/Photo Coming Soon.webp"
-    },
-    {
-      "id": 53,
-      "name": "Half Ham",
-      "price": "5.25/lb",
-      "category": "Smoked Meats and Fresh Sausage",
-      "image": "images/Photo Coming Soon.webp"
     }
   ]
 }

@@ -104,7 +104,8 @@
                         section.className = 'product-category-section' + (cat === 'Pork Roasts, Steaks, and Chops' ? ' pork-section' : '');
                         section.innerHTML = `<h2 class="category-heading">${cat}</h2><div class="product-grid">${
                             products.map(p => `
-                                <div class="product-card">
+                                <div class="product-card${p.available === false ? ' product-unavailable' : ''}">
+                                    ${p.available === false ? '<span class="unavailable-badge">Currently Unavailable</span>' : ''}
                                     <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.src='images/Photo Coming Soon.webp'">
                                     <div class="product-card-content">
                                         <h3>${p.name}</h3>

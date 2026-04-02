@@ -1134,6 +1134,28 @@ footer p {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
+.product-unavailable {
+    opacity: 0.55;
+    pointer-events: none;
+}
+
+.unavailable-badge {
+    position: absolute;
+    top: 0.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c0392b;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 0.25rem 0.6rem;
+    border-radius: 3px;
+    white-space: nowrap;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
 [data-theme="dark"] .about-image img {
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
 }
