@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium quality beef, pork, and specialty meats at Voget Meats">
+    <meta name="description" content="Premium USDA Choice beef, Carlton Farms pork, and house-made specialty meats at Voget Meats — your Hubbard, Oregon butcher shop serving the Willamette Valley.">
     <title>Our Products | Voget Meats</title>
     <link rel="stylesheet" href="styles.css">
 
@@ -39,7 +39,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="products.html" class="active">Products</a></li>
-                <li><a href="custom-cutting.html">Custom Cutting</a></li>
+                <li><a href="custom-cutting.html">Custom Game Processing</a></li>
+                <li><a href="custom-pork-processing.html">Custom Pork Processing</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -79,6 +80,8 @@
                 </div>
                 <div id="product-categories"></div>
 
+                <p class="products-disclaimer">Prices are subject to change without notice. Please <a href="contact.html">contact us</a> or visit the shop for current pricing.</p>
+
                 <div class="products-cta">
                     <h2>Need Custom Cuts?</h2>
                     <p>We offer custom cutting services to meet your exact specifications.</p>
@@ -101,7 +104,9 @@
                     Object.entries(grouped).forEach(([cat, products]) => {
                         const section = document.createElement('div');
                         section.id = cat.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-                        section.className = 'product-category-section' + (cat === 'Pork Roasts, Steaks, and Chops' ? ' pork-section' : '');
+                        section.className = 'product-category-section' +
+                            (cat === 'Pork Roasts Steaks and Chops' ? ' pork-section' : '') +
+                            (cat === 'USDA Choice Beef Steaks and Roasts' ? ' beef-section' : '');
                         section.innerHTML = `<h2 class="category-heading">${cat}</h2><div class="product-grid">${
                             products.map(p => `
                                 <div class="product-card${p.available === false ? ' product-unavailable' : ''}">
