@@ -827,39 +827,36 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 0.75rem;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, var(--color-dark-brown) 0%, var(--color-brown) 100%);
-    border-bottom: 3px solid var(--color-gold);
 }
 
-.products-jump-nav a {
+.jump-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-brown);
+}
+
+.jump-btn {
+    display: inline-block;
+    padding: 0.55rem 1.5rem;
+    background: linear-gradient(135deg, var(--color-rust) 0%, var(--color-deep-red) 100%);
     color: #faf8f5;
     text-decoration: none;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 0.85rem 2rem;
-    transition: background 0.2s ease, color 0.2s ease;
-    border-right: 1px solid rgba(255,255,255,0.15);
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 3px 10px rgba(139, 69, 19, 0.35);
 }
 
-.products-jump-nav a:last-child {
-    border-right: none;
-}
-
-.products-jump-nav a:hover {
-    background: rgba(184, 134, 11, 0.25);
-    color: var(--color-gold);
-}
-
-@media (max-width: 480px) {
-    .products-jump-nav a {
-        font-size: 0.95rem;
-        padding: 0.75rem 1rem;
-        letter-spacing: 1px;
-    }
+.jump-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.5);
 }
 
 /* Custom Cutting Page */
