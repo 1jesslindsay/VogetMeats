@@ -807,16 +807,59 @@ h1, h2, h3, h4, h5, h6 {
 
 .products-disclaimer {
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin: 2rem 0 3rem;
+    padding: 1rem 2rem;
     font-size: 1rem;
     font-style: italic;
-    color: var(--color-brown);
+    color: var(--color-dark-brown);
+    background: linear-gradient(135deg, var(--color-warm-white) 0%, var(--color-tan) 100%);
+    border-top: 3px solid var(--color-gold);
+    border-bottom: 3px solid var(--color-gold);
 }
 
 .products-disclaimer a {
     color: var(--color-rust);
     text-decoration: underline;
+}
+
+/* Products page jump navigation */
+.products-jump-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, var(--color-dark-brown) 0%, var(--color-brown) 100%);
+    border-bottom: 3px solid var(--color-gold);
+}
+
+.products-jump-nav a {
+    color: #faf8f5;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.85rem 2rem;
+    transition: background 0.2s ease, color 0.2s ease;
+    border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+.products-jump-nav a:last-child {
+    border-right: none;
+}
+
+.products-jump-nav a:hover {
+    background: rgba(184, 134, 11, 0.25);
+    color: var(--color-gold);
+}
+
+@media (max-width: 480px) {
+    .products-jump-nav a {
+        font-size: 0.95rem;
+        padding: 0.75rem 1rem;
+        letter-spacing: 1px;
+    }
 }
 
 /* Custom Cutting Page */
