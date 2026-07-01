@@ -13,7 +13,10 @@
       "Bash(git checkout -- contact.html index.html)",
       "WebSearch",
       "WebFetch(domain:1jesslindsay.github.io)",
-      "WebFetch(domain:vogetmeats.com)"
+      "WebFetch(domain:vogetmeats.com)",
+      "Bash(python -c \"import json,sys; data=json.load\\(sys.stdin\\); cats=list\\(dict.fromkeys\\([p[''''category''''] for p in data[''''products'''']]\\)\\); [print\\(c\\) for c in cats]\")",
+      "Bash(grep -E \"\\\\.html$|\\\\.js$|\\\\.json$\")",
+      "WebFetch(domain:www.google.com)"
     ]
   }
 }
