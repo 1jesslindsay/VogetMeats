@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium USDA Choice beef, Carlton Farms pork, and house-made specialty meats at Voget Meats — your Hubbard, Oregon butcher shop serving the Willamette Valley.">
-    <title>Our Products | Voget Meats</title>
+    <meta name="description" content="Page not found — Voget Meats, Hubbard, Oregon.">
+    <title>Page Not Found | Voget Meats</title>
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Fonts - Bebas Neue for nav links (non-blocking) -->
@@ -13,21 +13,44 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"></noscript>
 
-    <!-- Favicon - Update the href path if you move the favicon file -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/Favicon.png">
 
     <!-- Prevent dark mode flash -->
     <script>if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');}</script>
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://vogetmeats.com/products.html">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vogetmeats.com/products.html">
-    <meta property="og:title" content="Our Products | Voget Meats">
-    <meta property="og:description" content="Premium beef, fresh pork, house-made sausages, bacon, and smoked specialty meats from Voget Meats in Hubbard, Oregon.">
-    <meta property="og:image" content="https://vogetmeats.com/images/VogetLogo_2.png">
+    <style>
+        .not-found-section {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+        .not-found-section h1 {
+            font-size: 6rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            color: var(--accent, #8b1a1a);
+        }
+        .not-found-section h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        .not-found-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: var(--text-muted, #666);
+        }
+        .not-found-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -38,7 +61,7 @@
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="products.html">Products</a></li>
                 <li><a href="custom-cutting.html">Game Processing</a></li>
                 <li><a href="custom-pork-processing.html">Pork Processing</a></li>
                 <li><a href="faq.html">FAQ</a></li>
@@ -52,7 +75,6 @@
                 <a href="https://www.instagram.com/vogetmeats/" target="_blank" rel="noopener" aria-label="Instagram">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                 </a>
-                
             </div>
             <button type="button" class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
@@ -64,70 +86,18 @@
     </header>
 
     <main>
-        <section class="page-hero">
-            <h1>Our Products</h1>
-        </section>
-
-        <section class="products-page">
+        <section class="not-found-section">
             <div class="container">
-                <div class="products-page-header">
-                    <div class="logo-display">
-                        <img src="images/VogetLogo_2.png" alt="Voget Meats">
-                    </div>
-                    <p class="section-subtitle">Quality You Can Taste, Service You Can Trust</p>
-                </div>
-                <div class="products-jump-nav">
-                    <span class="jump-label">Jump to</span>
-                    <a href="#usda-choice-beef-steaks-and-roasts" class="jump-btn">Beef</a>
-                    <a href="#pork-roasts-steaks-and-chops" class="jump-btn">Pork</a>
-                    <a href="#smoked-meats-and-fresh-sausage" class="jump-btn">Smoked Meats &amp; Sausage</a>
-                </div>
-
-                <div id="product-categories"></div>
-
-                <div class="products-cta">
-                    <h2>Need Custom Cuts?</h2>
-                    <p>We offer custom cutting services to meet your exact specifications.</p>
-                    <a href="custom-cutting.html" class="btn">Learn About Custom Cutting</a>
+                <h1>404</h1>
+                <h2>Page Not Found</h2>
+                <p>Sorry, we couldn't find the page you were looking for.</p>
+                <div class="not-found-links">
+                    <a href="index.html" class="btn">Go Home</a>
+                    <a href="products.html" class="btn">View Products</a>
+                    <a href="contact.html" class="btn">Contact Us</a>
                 </div>
             </div>
         </section>
-
-        <script>
-            fetch('products.json')
-                .then(r => r.json())
-                .then(data => {
-                    const container = document.getElementById('product-categories');
-                    const grouped = {};
-                    data.products.forEach(p => {
-                        const cat = p.category || 'Other';
-                        if (!grouped[cat]) grouped[cat] = [];
-                        grouped[cat].push(p);
-                    });
-                    Object.entries(grouped).forEach(([cat, products]) => {
-                        const section = document.createElement('div');
-                        section.id = cat.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-                        section.className = 'product-category-section' +
-                            (cat === 'Pork Roasts Steaks and Chops' ? ' pork-section' : '') +
-                            (cat === 'USDA Choice Beef Steaks and Roasts' ? ' beef-section' : '');
-                        section.innerHTML = `<h2 class="category-heading">${cat}</h2><div class="product-grid">${
-                            products.map(p => `
-                                <div class="product-card${p.available === false ? ' product-unavailable' : ''}">
-                                    ${p.available === false ? '<span class="unavailable-badge">Currently Unavailable</span>' : ''}
-                                    <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.src='images/Photo Coming Soon.webp'">
-                                    <div class="product-card-content">
-                                        <h3>${p.name}</h3>
-                                    </div>
-                                </div>`).join('')
-                        }</div>`;
-                        container.appendChild(section);
-                    });
-                    if (window.location.hash) {
-                        const target = document.querySelector(window.location.hash);
-                        if (target) target.scrollIntoView({ behavior: 'smooth' });
-                    }
-                });
-        </script>
     </main>
 
     <footer>
