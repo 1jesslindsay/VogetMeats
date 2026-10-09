@@ -1,3 +1,6 @@
+// Enable CSS transitions after initial paint (prevents dark mode flash on load)
+document.documentElement.classList.add('ready');
+
 // Back to top
 const backToTop = document.getElementById('back-to-top');
 window.addEventListener('scroll', () => {

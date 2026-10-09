@@ -14,6 +14,9 @@ body {
     line-height: 1.6;
     color: var(--color-charcoal);
     background-color: var(--color-cream);
+}
+
+html.ready body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -396,18 +399,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5rem;
 }
 
-.product-price {
-    display: inline-block;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.1rem;
-    color: var(--color-rust);
-    letter-spacing: 1px;
-    padding: 0.3rem 0.8rem;
-    background: linear-gradient(135deg, var(--color-warm-white) 0%, var(--color-tan) 100%);
-    border: 2px solid var(--color-tan);
-    margin-top: 0.25rem;
-}
-
 /* Contact Section */
 .contact {
     padding: 120px 0;
@@ -735,6 +726,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-page h2:first-child {
     margin-top: 0;
+}
+
+/* About CTA */
+.about-cta .container {
+    text-align: center;
+    padding: 80px 1rem;
+}
+
+.about-cta-text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.about-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Products Page */
