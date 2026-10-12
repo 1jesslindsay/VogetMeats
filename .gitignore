@@ -16,3 +16,7 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Private working files (do not publish)
+*.docx
+*.csv

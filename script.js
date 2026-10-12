@@ -1,8 +1,18 @@
 // Enable CSS transitions after initial paint (prevents dark mode flash on load)
 document.documentElement.classList.add('ready');
 
+// Keep footer copyright year current
+const footerYear = document.getElementById('footer-year');
+if (footerYear) footerYear.textContent = new Date().getFullYear();
+
 // Back to top
-const backToTop = document.getElementById('back-to-top');
+const backToTop = document.createElement('button');
+backToTop.type = 'button';
+backToTop.className = 'back-to-top';
+backToTop.id = 'back-to-top';
+backToTop.setAttribute('aria-label', 'Back to top');
+backToTop.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>';
+document.body.appendChild(backToTop);
 window.addEventListener('scroll', () => {
     backToTop.classList.toggle('visible', window.scrollY > 400);
 }, { passive: true });
@@ -37,13 +47,57 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Dark mode toggle
+// Dark mode toggle (saves an explicit choice; otherwise the device setting is used)
 const themeToggle = document.getElementById('theme-toggle');
 themeToggle.addEventListener('click', () => {
     const html = document.documentElement;
     const newTheme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
+    try { localStorage.setItem('theme', newTheme); } catch (e) {}
+});
+
+// Holiday banner: only shown October–December
+const holidayBanner = document.getElementById('holiday-banner');
+if (holidayBanner && new Date().getMonth() >= 9) {
+    holidayBanner.hidden = false;
+}
+
+// FAQ: open the linked question when arriving via #anchor
+const linked = window.location.hash && document.getElementById(window.location.hash.slice(1));
+if (linked && linked.tagName === 'DETAILS') linked.open = true;
+
+// Contact forms: submit to Formspree in the background and show the result inline
+document.querySelectorAll('form[data-ajax]').forEach(form => {
+    const status = form.querySelector('.form-status');
+    const button = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        button.disabled = true;
+        button.textContent = 'Sending…';
+        status.hidden = true;
+        status.classList.remove('form-status-error');
+
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' },
+        })
+            .then(r => {
+                if (!r.ok) throw new Error('Request failed');
+                form.reset();
+                status.textContent = "Thanks! Your message was sent. We'll get back to you soon.";
+            })
+            .catch(() => {
+                status.classList.add('form-status-error');
+                status.innerHTML = 'Sorry, your message could not be sent. Please try again or call us at <a href="tel:+15039816271">(503) 981-6271</a>.';
+            })
+            .finally(() => {
+                status.hidden = false;
+                button.disabled = false;
+                button.textContent = 'Send Message';
+            });
+    });
 });
 
 // Products page: fetch products and build grid + jump nav
@@ -56,7 +110,10 @@ if (productContainer) {
     };
 
     fetch('products.json')
-        .then(r => r.json())
+        .then(r => {
+            if (!r.ok) throw new Error('Request failed');
+            return r.json();
+        })
         .then(data => {
             const grouped = {};
             data.products.forEach(p => {
@@ -103,5 +160,10 @@ if (productContainer) {
                 const target = document.querySelector(window.location.hash);
                 if (target) target.scrollIntoView({ behavior: 'smooth' });
             }
+        })
+        .catch(() => {
+            const jumpNav = document.getElementById('products-jump-nav');
+            if (jumpNav) jumpNav.style.display = 'none';
+            productContainer.innerHTML = '<p class="products-error">Sorry, our product list didn\'t load. Please refresh the page, or call us at <a href="tel:+15039816271">(503) 981-6271</a> to ask about what we have in stock.</p>';
         });
 }

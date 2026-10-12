@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <!-- Prevent dark mode flash -->
-    <script>if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');}</script>
+    <script>try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}</script>
 
     <!-- Preload hero background image for faster LCP -->
     <link rel="preload" as="image" href="images/webp/IMG_0037_edited.webp" fetchpriority="high">
@@ -32,7 +32,11 @@
     <meta property="og:url" content="https://vogetmeats.com/">
     <meta property="og:title" content="Voget Meats | Premium Quality Meats">
     <meta property="og:description" content="Hubbard, Oregon butcher shop serving the Willamette Valley since 1940. USDA Choice beef, Carlton Farms pork, house-made sausages, and custom wild game processing.">
-    <meta property="og:image" content="https://vogetmeats.com/images/VogetLogo_2.png">
+    <meta property="og:image" content="https://vogetmeats.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Hand-painted Voget Meats Inc. sign">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- Schema.org LocalBusiness -->
     <script type="application/ld+json">
@@ -43,6 +47,15 @@
         "description": "Old-fashioned smoked meats, retail meats, and custom wild game processing since 1940.",
         "url": "https://vogetmeats.com",
         "telephone": "+15039816271",
+        "image": "https://vogetmeats.com/images/og-image.jpg",
+        "logo": "https://vogetmeats.com/images/VogetLogo_2.png",
+        "foundingDate": "1940",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 45.18099,
+            "longitude": -122.80674
+        },
+        "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJURbNyGJnlVQRDaT0lScF7gM",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "2930 E. Street",
@@ -81,7 +94,31 @@
     </script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/Voget_Logo_Small.png" alt="Voget Meats Logo" width="111" height="70"></a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="custom-cutting.html">Game Processing</a></li>
+                <li><a href="custom-pork-processing.html">Pork Processing</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-right">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/VogetMeats1" target="_blank" rel="noopener" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <a href="https://www.instagram.com/vogetmeats/" target="_blank" rel="noopener" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                </div>
+                <button type="button" class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <section id="home" class="hero">
@@ -118,7 +155,7 @@
                         <div class="review-header">
                             <div class="reviewer-info">
                                 <strong class="reviewer-name">Lori J.</strong>
-                                <div class="review-stars">★★★★★</div>
+                                <div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
                             </div>
                         </div>
                         <p class="review-text">Our family drives from Portland to Voget Meats in Hubbard, Oregon, because they are absolutely worth the trip. Their fresh meat selection is out of this world, and their seasonal and holiday options are stellar. The cured and smoked hams are delicious! We also use Voget Meats for custom processing of meat we buy directly from farms. They're incredibly flexible and will even add things like bacon fat to our hamburger grind. Voget Meats has earned our trust and loyalty over the years. Highly recommended!</p>
@@ -128,7 +165,7 @@
                         <div class="review-header">
                             <div class="reviewer-info">
                                 <strong class="reviewer-name">Kamryn D.</strong>
-                                <div class="review-stars">★★★★★</div>
+                                <div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
                             </div>
                         </div>
                         <p class="review-text">This is my favorite place for bacon! Three generations of family (myself, my mother, and grandparents) have continued to come here for years! The staff is always kind and the store is always extremely clean! I will forever buy my bacon from here.</p>
@@ -138,7 +175,7 @@
                         <div class="review-header">
                             <div class="reviewer-info">
                                 <strong class="reviewer-name">Kari E.</strong>
-                                <div class="review-stars">★★★★★</div>
+                                <div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
                             </div>
                         </div>
                         <p class="review-text">We bought a pound of the chorizo on Saturday for homemade empanadas. It was absolutely delicious! Very impressed with the chorizo, and all of the other products sold here.</p>
@@ -205,14 +242,18 @@
                     </div>
                     <div class="contact-form">
                         <h3>Send Us a Message</h3>
-                        <form action="https://formspree.io/f/xaqdvynj" method="POST">
+                        <form action="https://formspree.io/f/xaqdvynj" method="POST" data-ajax>
+                            <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
                             <label for="home-name">Name</label>
                             <input type="text" id="home-name" name="name" placeholder="Your Name" required>
                             <label for="home-email">Email</label>
                             <input type="email" id="home-email" name="email" placeholder="Your Email" required>
+                            <label for="home-phone">Phone <span class="label-optional">(optional)</span></label>
+                            <input type="tel" id="home-phone" name="phone" placeholder="Your Phone">
                             <label for="home-message">Message</label>
                             <textarea id="home-message" name="message" placeholder="Your Message" rows="5" required></textarea>
                             <button type="submit" class="btn">Send Message</button>
+                            <p class="form-status" role="status" aria-live="polite" hidden></p>
                         </form>
                     </div>
                 </div>
@@ -220,9 +261,39 @@
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-center">
+                    <div class="footer-info">
+                        <p class="footer-name">Voget Meats</p>
+                        <p>2930 E. Street, Hubbard, Oregon 97032</p>
+                        <p><a href="tel:+15039816271">(503) 981-6271</a></p>
+                        <p class="footer-hours">
+                            Oct–Dec: Mon–Fri 8am–5:30pm, Sat 8am–4pm<br>
+                            Jan–Sep: Tue–Fri 8am–5:30pm, Sat 8am–4pm<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/VogetMeats1" target="_blank" rel="noopener" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="https://www.instagram.com/vogetmeats/" target="_blank" rel="noopener" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    </div>
+                    <p class="footer-copy">&copy; <span id="footer-year">2026</span> Voget Meats. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        <span class="theme-label-dark">Dark</span>
+                        <span class="theme-label-light">Light</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <script src="components.js"></script>
     <script src="script.js" defer></script>
+    <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5696744fb03349cfb9a76b223e2918e8"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
