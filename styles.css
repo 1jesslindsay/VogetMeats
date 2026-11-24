@@ -7,6 +7,22 @@
 
 html {
     scroll-behavior: smooth;
+    /* Keep jump-link targets from hiding under the fixed navbar */
+    scroll-padding-top: 110px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Visible focus ring for keyboard users (form fields use their gold border instead) */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 2px;
 }
 
 body {

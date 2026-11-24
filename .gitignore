@@ -20,3 +20,6 @@ Thumbs.db
 # Private working files (do not publish)
 *.docx
 *.csv
+
+# Claude Code local settings
+.claude/

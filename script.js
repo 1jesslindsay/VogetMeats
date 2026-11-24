@@ -143,7 +143,8 @@ if (productContainer) {
                 section.className = 'product-category-section' +
                     (cat === 'Pork Roasts Steaks and Chops' ? ' pork-section' : '') +
                     (cat === 'USDA Choice Beef Steaks and Roasts' ? ' beef-section' : '');
-                section.innerHTML = `<h2 class="category-heading">${cat}</h2><div class="product-grid">${
+                const heading = cat === 'Pork Roasts Steaks and Chops' ? 'Pork Roasts, Steaks, and Chops' : cat;
+                section.innerHTML = `<h2 class="category-heading">${heading}</h2><div class="product-grid">${
                     products.map(p => `
                         <div class="product-card${p.available === false ? ' product-unavailable' : ''}">
                             ${p.available === false ? '<span class="unavailable-badge">Currently Unavailable</span>' : ''}

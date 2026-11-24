@@ -3,357 +3,306 @@
     {
       "id": 1,
       "name": "Old-Fashioned Smoked German",
-      "price": "7.10/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Old-Fashioned-Smoked-German.webp"
     },
     {
       "id": 2,
       "name": "Beef Summer Sausage, Slice to Order",
-      "price": "7.10/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Beef Summer Sausage, Slice to Order.webp"
     },
     {
       "id": 3,
       "name": "Jalapeño and Cheese Summer Sausage",
-      "price": "8.10/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 4,
       "name": "Voget's Hot Dogs",
-      "price": "6.75/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 5,
       "name": "Smoked Baby Back Ribs",
-      "price": "6.95/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 6,
       "name": "Bacon",
-      "price": "8.95/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 7,
       "name": "Pepper Bacon",
-      "price": "9.95/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 8,
       "name": "Voget's Whole and Half Hams",
-      "price": "5.15–5.25/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 9,
       "name": "Sliced Beef Bacon",
-      "price": "8.50/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 10,
       "name": "Oktoberfest Smoke Sausage Links",
-      "price": "7.25/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 11,
       "name": "Little Smokies",
-      "price": "9.45/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Little Smokies.webp"
     },
     {
       "id": 12,
       "name": "Ham Steaks",
-      "price": "6.25/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 13,
       "name": "Traditional Smoked Linguisa",
-      "price": "7.60/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 14,
       "name": "Original, Teriyaki, and Jalapeño Pepperoni Sticks",
-      "price": "18.95 EA",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 15,
       "name": "Turkey Teriyaki Pepperoni Sticks",
-      "price": "Sold Out",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 16,
       "name": "Spicy Red Hots",
-      "price": "7.25/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Spicy Red Hots.webp"
     },
     {
       "id": 17,
       "name": "Old-Fashioned Dinner Franks",
-      "price": "7.25/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Old-Fashioned Dinner Franks.webp"
     },
     {
       "id": 18,
       "name": "Assorted Smoked Pork Chops",
-      "price": "5.25 (End Cut) – 6.25/lb (Center Cut)",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 19,
       "name": "Sage Sausage Patties",
-      "price": "6.95/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 20,
       "name": "Bacon Ends and Pieces",
-      "price": "7.95/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Bacon Ends and Pieces.webp"
     },
     {
       "id": 21,
       "name": "Fresh Italian Links",
-      "price": "7.10/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 22,
       "name": "Back Bacon",
-      "price": "8.95/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Back Bacon.webp"
     },
     {
       "id": 23,
       "name": "Chipped Beef",
-      "price": "15.00/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Chipped Beef.webp"
     },
     {
       "id": 24,
       "name": "Tiny Links",
-      "price": "7.40/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Tiny Links.webp"
     },
     {
       "id": 25,
       "name": "Whole Smoked Chickens",
-      "price": "4.50/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Whole Smoked Chickens.webp"
     },
     {
       "id": 26,
       "name": "Smoked Pork Butt (Pork Shoulder)",
-      "price": "Call for pricing",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 27,
       "name": "Smoked Shanks and Hocks",
-      "price": "Hocks 2.95/lb · Shanks 4.50/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 28,
       "name": "Seasoned Breakfast Sausage",
-      "price": "5.50/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 29,
       "name": "Italian Breakfast Sausage",
-      "price": "6.50/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 30,
       "name": "Sage Breakfast Sausage",
-      "price": "5.50/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 31,
       "name": "Voget's Fresh Chorizo",
-      "price": "6.75/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 32,
       "name": "Lean Ground Beef",
-      "price": "7.75/lb",
       "category": "USDA Choice Beef Steaks and Roasts",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 33,
       "name": "Meatloaf",
-      "price": "7.95/lb",
       "category": "USDA Choice Beef Steaks and Roasts",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 34,
       "name": "Chuck Roast",
-      "price": "8.95/lb",
       "category": "USDA Choice Beef Steaks and Roasts",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 35,
       "name": "Ribeye Steak",
-      "price": "21.95/lb",
       "category": "USDA Choice Beef Steaks and Roasts",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 36,
       "name": "T-Bone Steak",
-      "price": "15.95/lb",
       "category": "USDA Choice Beef Steaks and Roasts",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 37,
       "name": "Top Sirloin",
-      "price": "13.50/lb",
       "category": "USDA Choice Beef Steaks and Roasts",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 38,
       "name": "Tri-Tip Roast",
-      "price": "12.50/lb",
       "category": "USDA Choice Beef Steaks and Roasts",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 39,
       "name": "Rump Roasts",
-      "price": "7.99/lb",
       "category": "USDA Choice Beef Steaks and Roasts",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 40,
       "name": "Cube Steak",
-      "price": "7.45/lb",
       "category": "USDA Choice Beef Steaks and Roasts",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 41,
       "name": "Filet Mignon",
-      "price": "29.95/lb",
       "category": "USDA Choice Beef Steaks and Roasts",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 42,
       "name": "Brisket",
-      "price": "6.95/lb",
       "category": "USDA Choice Beef Steaks and Roasts",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 43,
       "name": "Pork Chops",
-      "price": "5.25/lb",
       "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 44,
       "name": "Side Pork",
-      "price": "7.25/lb",
       "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 45,
       "name": "Boneless Pork Loin Roast",
-      "price": "5.25/lb",
       "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 46,
       "name": "Pork Shoulder Roast",
-      "price": "5.25/lb",
       "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 47,
       "name": "Pork Shoulder Steak",
-      "price": "5.25/lb",
       "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 48,
       "name": "Baby Back Ribs",
-      "price": "5.95/lb",
       "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 49,
       "name": "Carlton Farms Whole or Half Hogs Cut To Order",
-      "price": "Call for pricing",
       "category": "Pork Roasts Steaks and Chops",
       "image": "images/Photo Coming Soon.webp"
     },
     {
       "id": 50,
       "name": "Original and Teriyaki Beef Jerky",
-      "price": "34.95/1lb · 18.95/½lb · 10.25/¼lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Original and Teriyaki Beef Jerky.webp"
     },
     {
       "id": 51,
       "name": "Turkey Jerky",
-      "price": "11.50/lb",
       "category": "Smoked Meats and Fresh Sausage",
       "image": "images/Turkey Jerky.webp"
     }
